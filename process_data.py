@@ -38,10 +38,10 @@ def load_data(messages_filepath, categories_filepath):
     """
     
     # Load messages dataset
-    messages = pd.read_csv('messages.csv')
+    messages = pd.read_csv(messages_filepath)
     
     # Load categories dataset
-    categories = pd.read_csv('categories.csv')
+    categories = pd.read_csv(categories_filepath)
     
     # Merge datasets
     df = pd.merge(messages, categories, on='id', how='inner')
