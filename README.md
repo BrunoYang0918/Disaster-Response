@@ -3,6 +3,7 @@ This purpose to build this natural language model is to increase the speed of cl
 
 ## Initialization
 The below pacakges are required for running these script.
+sys, sklearn, re, ntlk, pandas, numpy, sqlalchemy
 
 ## File Description
 1. process_data.py: 
