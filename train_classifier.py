@@ -117,8 +117,6 @@ def build_model():
     
     # Use grid search to find better parameters. 
     parameters = {
-    'vect__ngram_range': ((1, 1), (1, 2)),
-    'vect__max_df': (0.5, 0.75, 1.0),
     'vect__max_features': (None, 5000, 10000),
     'tfidf__use_idf': (True, False)}
 
