@@ -145,12 +145,12 @@ def evaluate_model(model, X_test, Y_test, category_names):
     """
     
     # Predict use the trained model
-    y_pred = model.predict(X_test)
+    Y_pred = model.predict(X_test)
     
     # Report Model Effectiveness
     for i, col in enumerate(category_names):
         target_names = ['class 0', 'class 1', 'class 2']
-        print(classification_report(y_test[col].tolist(), list(y_pred[:, i]), target_names=target_names))
+        print(classification_report(Y_test[col].tolist(), list(Y_pred[:, i]), target_names=target_names))
 # -
 
 # ## Save Model
